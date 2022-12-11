@@ -1,11 +1,11 @@
-﻿using Calculator.Data;
-using Calculator.Data.Implementations;
-using Calculator.Operations;
-using Calculator.Operations.Implementations;
+﻿using Calculator.Web.Data;
+using Calculator.Web.Data.Implementations;
+using Calculator.Web.Operations;
+using Calculator.Web.Operations.Implementations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace Calculator.Intrastructure
+namespace Calculator.Web.Intrastructure
 {
     public static class DependencyRegistratorExtention
     {

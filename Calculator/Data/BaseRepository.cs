@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculator.Data
+namespace Calculator.Web.Data
 {
     public abstract class BaseRepository : IIdProvider
     {

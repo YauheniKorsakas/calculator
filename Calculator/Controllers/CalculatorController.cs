@@ -1,11 +1,11 @@
-﻿using Calculator.Operations;
-using Calculator.ViewModels;
+﻿using Calculator.Web.Operations;
+using Calculator.Web.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 
-namespace Calculator.Controllers
+namespace Calculator.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

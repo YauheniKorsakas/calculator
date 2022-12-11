@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Calculator.Data;
-using Calculator.Data.Models;
-using Calculator.ViewModels;
+using Calculator.Web.Data;
+using Calculator.Web.Data.Models;
+using Calculator.Web.ViewModels;
 using System;
 
-namespace Calculator.Operations.Implementations
+namespace Calculator.Web.Operations.Implementations
 {
     public class PlusOperation : IPlusOperation
     {

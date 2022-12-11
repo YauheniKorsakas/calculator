@@ -1,6 +1,6 @@
-﻿using Calculator.ViewModels;
+﻿using Calculator.Web.ViewModels;
 
-namespace Calculator.Operations
+namespace Calculator.Web.Operations
 {
     public interface IGetCalculatorOperationOperation
     {

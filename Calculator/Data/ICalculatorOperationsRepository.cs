@@ -1,6 +1,6 @@
-﻿using Calculator.Data.Models;
+﻿using Calculator.Web.Data.Models;
 
-namespace Calculator.Data
+namespace Calculator.Web.Data
 {
     public interface ICalculatorOperationsRepository : IGenericRepository<CalculatorOperation>
     {

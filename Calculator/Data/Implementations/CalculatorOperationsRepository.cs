@@ -1,12 +1,13 @@
-﻿using Calculator.Data.Models;
-using Calculator.Data.Source;
+﻿using Calculator.Web.Data.Models;
+using Calculator.Web.Data.Source;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Calculator.Data.Implementations
+namespace Calculator.Web.Data.Implementations
 {
-    public class CalculatorOperationsRepository : BaseRepository, ICalculatorOperationsRepository {
+    public class CalculatorOperationsRepository : BaseRepository, ICalculatorOperationsRepository
+    {
         public CalculatorOperationsRepository(IIdProvider idProvider) : base(idProvider) { }
 
         public void Add(CalculatorOperation model) {

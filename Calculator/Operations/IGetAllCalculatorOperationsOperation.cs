@@ -1,7 +1,7 @@
-﻿using Calculator.ViewModels;
+﻿using Calculator.Web.ViewModels;
 using System.Collections.Generic;
 
-namespace Calculator.Operations
+namespace Calculator.Web.Operations
 {
     public interface IGetAllCalculatorOperationsOperation
     {

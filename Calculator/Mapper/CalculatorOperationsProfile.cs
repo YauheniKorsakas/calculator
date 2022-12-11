@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Calculator.Data.Models;
-using Calculator.ViewModels;
+using Calculator.Web.Data.Models;
+using Calculator.Web.ViewModels;
 
-namespace Calculator.Mapper
+namespace Calculator.Web.Mapper
 {
     public class CalculatorOperationsProfile : Profile
     {

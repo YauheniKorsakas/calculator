@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculator.Data.Implementations
+namespace Calculator.Web.Data.Implementations
 {
     public class IdProvider : IIdProvider
     {

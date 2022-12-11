@@ -1,4 +1,4 @@
-﻿namespace Calculator.Data
+﻿namespace Calculator.Web.Data
 {
     public interface IIdProvider
     {

@@ -1,7 +1,7 @@
-﻿using Calculator.Data.Models;
+﻿using Calculator.Web.Data.Models;
 using System.Collections.Generic;
 
-namespace Calculator.Data.Source
+namespace Calculator.Web.Data.Source
 {
     public static class CalculatorOperationsSource
     {

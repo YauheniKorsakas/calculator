@@ -1,4 +1,4 @@
-﻿namespace Calculator.Operations
+﻿namespace Calculator.Web.Operations
 {
     public interface IPlusOperation
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Calculator.Data
+namespace Calculator.Web.Data
 {
-    public interface IGenericRepository<T> where T: class
+    public interface IGenericRepository<T> where T : class
     {
         T Get(string id);
         IReadOnlyCollection<T> Get();

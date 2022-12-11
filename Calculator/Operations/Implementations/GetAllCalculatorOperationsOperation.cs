@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Calculator.Data;
-using Calculator.ViewModels;
+using Calculator.Web.Data;
+using Calculator.Web.ViewModels;
 using System;
 using System.Collections.Generic;
 
-namespace Calculator.Operations.Implementations
+namespace Calculator.Web.Operations.Implementations
 {
     public class GetAllCalculatorOperationsOperation : IGetAllCalculatorOperationsOperation
     {

@@ -1,6 +1,6 @@
-﻿namespace Calculator.ViewModels
+﻿namespace Calculator.Web.Data.Models
 {
-    public class CalculatorOperationViewModel
+    public class CalculatorOperation
     {
         public string Id { get; set; }
         public string OperationName { get; set; }
