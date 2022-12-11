@@ -1,0 +1,8 @@
+name: test-workflow
+run-name: ${{ github.actor }} for test
+on: [push]
+jobs: 
+  job1:
+    name: first job
+  job2:
+    name: second job
