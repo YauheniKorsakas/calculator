@@ -45,5 +45,10 @@ namespace Calculator.Web.Tests.Operations
             toSave.OperationName.Should().Be(nameof(PlusOperation));
             toSave.OperationResult.Should().Be(firstOperand + secondOperand);
         }
+
+        [Test]
+        public void Sum() {
+            Assert.AreEqual(1, 2);
+        }
     }
 }
