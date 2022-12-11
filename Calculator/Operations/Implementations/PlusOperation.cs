@@ -9,22 +9,20 @@ namespace Calculator.Web.Operations.Implementations
     public class PlusOperation : IPlusOperation
     {
         private readonly ICalculatorOperationsRepository calculatorOperationsRepository;
-        private readonly IMapper mapper;
 
-        public PlusOperation(ICalculatorOperationsRepository calculatorOperationsRepository, IMapper mapper) {
+        public PlusOperation(ICalculatorOperationsRepository calculatorOperationsRepository) {
             this.calculatorOperationsRepository = calculatorOperationsRepository ?? throw new ArgumentNullException(nameof(calculatorOperationsRepository));
-            this.mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
-        public void Execute(double first, double second) {
-            var result = first + second;
-            var operation = new CalculatorOperationViewModel {
-                FirstArgument = first,
-                SecondArgument = second,
+        public void Execute(double firstOperand, double secondOperand) {
+            var result = firstOperand + secondOperand;
+            // Could be potentially moved into another entity that maps props directly.
+            var toSave = new CalculatorOperation {
+                FirstOperand = firstOperand,
+                SecondOperand = secondOperand,
                 OperationName = nameof(PlusOperation),
                 OperationResult = result
             };
-            var toSave = mapper.Map<CalculatorOperation>(operation);
             calculatorOperationsRepository.Add(toSave);
         }
     }

@@ -4,8 +4,8 @@
     {
         public string Id { get; set; }
         public string OperationName { get; set; }
-        public double FirstArgument { get; set; }
-        public double SecondArgument { get; set; }
+        public double FirstOperand { get; set; }
+        public double SecondOperand { get; set; }
         public double OperationResult { get; set; }
     }
 }

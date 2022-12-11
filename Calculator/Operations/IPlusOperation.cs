@@ -2,6 +2,6 @@
 {
     public interface IPlusOperation
     {
-        void Execute(double first, double second);
+        void Execute(double firstOperand, double secondOperand);
     }
 }
