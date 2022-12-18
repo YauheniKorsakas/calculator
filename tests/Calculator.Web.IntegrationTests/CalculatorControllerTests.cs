@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 namespace Calculator.Web.IntegrationTests
 {
     [TestFixture]
-    public class BasicTests
+    public class CalculatorControllerTests
     {
         [Test]
         public async Task Get_EndpointReturnsAllData() {
-            var builder = new WebHostBuilder().UseStartup<Startup>();
+            var builder = new WebHostBuilder().UseStartup<Startup>(); // first approach.
             var testServer = new TestServer(builder);
             var httpClient = testServer.CreateClient();
 
@@ -25,7 +25,7 @@ namespace Calculator.Web.IntegrationTests
 
         [Test]
         public async Task Get_UseApp_EndpointReturnsAllData() {
-            var app = new CalculatorApplication();
+            var app = new CalculatorApplication(); // another approach
             var client = app.CreateClient();
 
             var result = await client.GetAsync("/calculator/operations");
